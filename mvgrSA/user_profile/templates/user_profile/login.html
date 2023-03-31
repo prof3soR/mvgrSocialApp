@@ -1,0 +1,19 @@
+<form method="post" action="{% url "login" %}">
+    {% csrf_token %}
+    <div>
+      <label for="mobile">Redg No :</label>
+      <input type="text" placeholder="Regrestrations number" name="redg_no" id="mobile">
+      <div id="mobile-error" class="input-error"></div>
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input type="password" placeholder="Password" name="password" id="password">
+      <div id="password-error" class="input-error"></div>
+    </div>
+    <div>
+      <a href="#">New user? Create you account here!</a>
+    </div>
+    <div>
+      <input type="submit" value="Login">
+    </div>
+  </form>
